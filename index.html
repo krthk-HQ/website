@@ -19,11 +19,11 @@
 
     <!-- End of headStart -->
     <meta name="viewport" content="width=device-width">
-    <meta name="generator" content="Framer 5e8f756">
+    <meta name="generator" content="Framer 8c094e5">
     <title>krthk.me</title>
     <meta name="description" content>
-    <meta name="framer-search-index" content="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/searchIndex-upu9Yiyikd0w.json">
-    <meta name="framer-search-index-fallback" content="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/searchIndex-lQaOKb8VnFpc.json">
+    <meta name="framer-search-index" content="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/searchIndex-66qbXHJsOZuv.json">
+    <meta name="framer-search-index-fallback" content="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/searchIndex-J6x0CEnn4pNl.json">
     <meta name="framer-html-plugin" content="disable">
     <link href="https://framerusercontent.com/images/aPZ3Weur7hA7rYtyArdgrFJ7VU0.png" rel="icon" media="(prefers-color-scheme: light)">
     <link href="https://framerusercontent.com/images/aPZ3Weur7hA7rYtyArdgrFJ7VU0.png" rel="icon" media="(prefers-color-scheme: dark)">
@@ -31,12 +31,12 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="krthk.me">
     <meta property="og:description" content>
-    <meta property="og:image" content="https://framerusercontent.com/assets/dRdxxWCvQYhlWZ5q2w4pRhLULjA.png">
+    <meta property="og:image" content="https://framerusercontent.com/images/JXpeEJ7hvX466goLvDCLeHJeqo.jpg">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="krthk.me">
     <meta name="twitter:description" content>
-    <meta name="twitter:image" content="https://framerusercontent.com/assets/dRdxxWCvQYhlWZ5q2w4pRhLULjA.png">
+    <meta name="twitter:image" content="https://framerusercontent.com/images/JXpeEJ7hvX466goLvDCLeHJeqo.jpg">
 
     <style data-framer-font-css>
         /* cyrillic */
@@ -988,7 +988,7 @@
             }
         }
     </style>
-    <style data-framer-css-ssr-minified data-framer-components="framer-lib-cursors-host framer-tcYtn framer-tY4Vr PropertyOverrides framer-ZEtbb framer-osYEA framer-3sTil framer-7fn0J framer-3ozl6 framer-z7j30 framer-cqi6k framer-FqE9U">
+    <style data-framer-css-ssr-minified data-framer-components="framer-lib-cursors-host framer-tcYtn framer-9wgUm PropertyOverrides framer-ZEtbb framer-osYEA framer-3sTil framer-7fn0J framer-3ozl6 framer-z7j30 framer-cqi6k framer-FqE9U">
         html,
         body,
         #main {
@@ -1044,6 +1044,16 @@
         @supports (background:-webkit-named-image(i)) and (not (grid-template-rows:subgrid)) {
             body {
                 --framer-will-change-override: transform
+            }
+        }
+
+        body {
+            --framer-will-change-filter-override: none
+        }
+
+        @supports (background:-webkit-named-image(i)) and (not (position-area:top right)) {
+            body {
+                --framer-will-change-filter-override: filter
             }
         }
 
@@ -1368,20 +1378,21 @@
         a.framer-text span.framer-text:not([data-text-fill]),
         span.framer-text[data-nested-link],
         span.framer-text[data-nested-link] span.framer-text:not([data-text-fill]) {
+            color: inherit;
             font-family: var(--framer-blockquote-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
             font-style: var(--framer-blockquote-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
             font-weight: var(--framer-blockquote-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
-            color: var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
             font-size: calc(var(--framer-blockquote-font-size, var(--framer-font-size, 16px))*var(--framer-font-size-scale, 1));
             text-transform: var(--framer-blockquote-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
             cursor: var(--framer-custom-cursors, pointer);
-            background-color: var(--framer-link-text-background-color, initial);
+            background-color: initial;
             border-radius: var(--framer-link-text-background-radius, initial);
             padding: var(--framer-link-text-background-padding, initial)
         }
 
         a.framer-text,
         span.framer-text[data-nested-link] {
+            color: var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
             -webkit-text-decoration-line: var(--framer-blockquote-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial)));
             text-decoration-line: var(--framer-blockquote-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial)));
             -webkit-text-decoration-style: var(--framer-blockquote-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial)));
@@ -1390,16 +1401,17 @@
             text-decoration-color: var(--framer-blockquote-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial)));
             text-decoration-thickness: var(--framer-blockquote-text-decoration-thickness, var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, initial)));
             text-decoration-skip-ink: var(--framer-blockquote-text-decoration-skip-ink, var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink, initial)));
-            text-underline-offset: var(--framer-blockquote-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial)))
+            text-underline-offset: var(--framer-blockquote-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial)));
+            background-color: var(--framer-link-text-background-color, initial)
         }
 
         @supports not (color:color(display-p3 1 1 1)) {
             a.framer-text,
-            a.framer-text span.framer-text:not([data-text-fill]),
-            span.framer-text[data-nested-link],
-            span.framer-text[data-nested-link] span.framer-text:not([data-text-fill]) {
+            span.framer-text[data-nested-link] {
                 color: var(--framer-blockquote-text-color-rgb, var(--framer-blockquote-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))));
-                background-color: var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, initial))
+                background-color: var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, initial));
+                -webkit-text-decoration-color: var(--framer-link-text-decoration-color-rgb, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color-rgb, var(--framer-text-decoration-color, currentcolor))));
+                text-decoration-color: var(--framer-link-text-decoration-color-rgb, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color-rgb, var(--framer-text-decoration-color, currentcolor))))
             }
         }
 
@@ -1410,8 +1422,13 @@
             font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
             font-style: var(--framer-blockquote-font-style, var(--framer-code-font-style, var(--framer-font-style, normal)));
             font-weight: var(--framer-blockquote-font-weight, var(--framer-code-font-weight, var(--framer-font-weight, 400)));
-            color: var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))));
+            color: inherit;
             font-size: calc(var(--framer-blockquote-font-size, var(--framer-font-size, 16px))*var(--framer-font-size-scale, 1))
+        }
+
+        code.framer-text a.framer-text,
+        code.framer-text span.framer-text[data-nested-link] {
+            color: var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))))
         }
 
         @supports not (color:color(display-p3 1 1 1)) {
@@ -1430,16 +1447,15 @@
             font-family: var(--framer-link-hover-font-family, var(--framer-blockquote-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));
             font-style: var(--framer-link-hover-font-style, var(--framer-blockquote-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));
             font-weight: var(--framer-link-hover-font-weight, var(--framer-blockquote-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));
-            color: var(--framer-link-hover-text-color, var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
             font-size: calc(var(--framer-link-hover-font-size, var(--framer-blockquote-font-size, var(--framer-font-size, 16px)))*var(--framer-font-size-scale, 1));
             text-transform: var(--framer-link-hover-text-transform, var(--framer-blockquote-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none))));
-            background-color: var(--framer-link-hover-text-background-color, var(--framer-link-text-background-color, var(--framer-text-background-color, initial)));
             border-radius: var(--framer-link-hover-text-background-radius, var(--framer-link-text-background-radius, var(--framer-text-background-radius, initial)));
             padding: var(--framer-link-hover-text-background-padding, var(--framer-link-text-background-padding, var(--framer-text-background-padding, initial)))
         }
 
         a.framer-text:hover,
         span.framer-text[data-nested-link]:hover {
+            color: var(--framer-link-hover-text-color, var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
             -webkit-text-decoration-line: var(--framer-link-hover-text-decoration, var(--framer-blockquote-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial))));
             text-decoration-line: var(--framer-link-hover-text-decoration, var(--framer-blockquote-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial))));
             -webkit-text-decoration-style: var(--framer-link-hover-text-decoration-style, var(--framer-blockquote-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial))));
@@ -1448,36 +1464,29 @@
             text-decoration-color: var(--framer-link-hover-text-decoration-color, var(--framer-blockquote-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial))));
             text-decoration-thickness: var(--framer-link-hover-text-decoration-thickness, var(--framer-blockquote-text-decoration-thickness, var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, initial))));
             text-decoration-skip-ink: var(--framer-link-hover-text-decoration-skip-ink, var(--framer-blockquote-text-decoration-skip-ink, var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink, initial))));
-            text-underline-offset: var(--framer-link-hover-text-decoration-offset, var(--framer-blockquote-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial))))
+            text-underline-offset: var(--framer-link-hover-text-decoration-offset, var(--framer-blockquote-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial))));
+            background-color: var(--framer-link-hover-text-background-color, var(--framer-link-text-background-color, var(--framer-text-background-color, initial)))
         }
 
         @supports not (color:color(display-p3 1 1 1)) {
             a.framer-text:hover,
-            a.framer-text:hover span.framer-text:not([data-text-fill]),
-            span.framer-text[data-nested-link]:hover,
-            span.framer-text[data-nested-link]:hover span.framer-text:not([data-text-fill]) {
+            span.framer-text[data-nested-link]:hover {
                 color: var(--framer-link-hover-text-color-rgb, var(--framer-link-hover-text-color, var(--framer-blockquote-text-color-rgb, var(--framer-blockquote-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))));
-                background-color: var(--framer-link-hover-text-background-color-rgb, var(--framer-link-hover-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, var(--framer-text-background-color-rgb, var(--framer-text-background-color, initial))))))
+                background-color: var(--framer-link-hover-text-background-color-rgb, var(--framer-link-hover-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, var(--framer-text-background-color-rgb, var(--framer-text-background-color, initial))))));
+                -webkit-text-decoration-color: var(--framer-link-hover-text-decoration-color-rgb, var(--framer-link-hover-text-decoration-color, var(--framer-link-text-decoration-color-rgb, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color-rgb, var(--framer-text-decoration-color, currentcolor))))));
+                text-decoration-color: var(--framer-link-hover-text-decoration-color-rgb, var(--framer-link-hover-text-decoration-color, var(--framer-link-text-decoration-color-rgb, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color-rgb, var(--framer-text-decoration-color, currentcolor))))))
             }
         }
 
         code.framer-text a.framer-text:hover,
-        code.framer-text a.framer-text:hover span.framer-text:not([data-text-fill]),
-        code.framer-text span.framer-text[data-nested-link]:hover,
-        code.framer-text span.framer-text[data-nested-link]:hover span.framer-text:not([data-text-fill]) {
-            font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
-            font-style: var(--framer-blockquote-font-style, var(--framer-code-font-style, var(--framer-font-style, normal)));
-            font-weight: var(--framer-blockquote-font-weight, var(--framer-code-font-weight, var(--framer-font-weight, 400)));
-            color: var(--framer-link-hover-text-color, var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)))));
-            font-size: calc(var(--framer-link-hover-font-size, var(--framer-blockquote-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))))*var(--framer-font-size-scale, 1))
+        code.framer-text span.framer-text[data-nested-link]:hover {
+            color: var(--framer-link-hover-text-color, var(--framer-blockquote-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)))))
         }
 
         @supports not (color:color(display-p3 1 1 1)) {
             code.framer-text a.framer-text:hover,
-            code.framer-text a.framer-text:hover span.framer-text:not([data-text-fill]),
-            code.framer-text span.framer-text[data-nested-link]:hover,
-            code.framer-text span.framer-text[data-nested-link]:hover span.framer-text:not([data-text-fill]) {
-                color: var(--framer-link-hover-text-color-rgb, var(--framer-link-hover-text-color, var(--framer-blockquote-text-color-rgb, var(--framer-blockquote-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))))
+            code.framer-text span.framer-text[data-nested-link]:hover {
+                color: var(--framer-link-hover-text-color-rgb, var(--framer-link-hover-text-color, var(--framer-blockquote-text-color-rgb, var(--framer-blockquote-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-code-text-color-rgb, var(--framer-code-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))))))
             }
         }
 
@@ -1488,16 +1497,15 @@
             font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
             font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
             font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
-            color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
             font-size: calc(var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)))*var(--framer-font-size-scale, 1));
             text-transform: var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
-            background-color: var(--framer-link-current-text-background-color, var(--framer-link-text-background-color, initial));
             border-radius: var(--framer-link-current-text-background-radius, var(--framer-link-text-background-radius, initial));
             padding: var(--framer-link-current-text-background-padding, var(--framer-link-text-background-padding, initial))
         }
 
         a.framer-text[data-framer-page-link-current],
         span.framer-text[data-framer-page-link-current] {
+            color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
             -webkit-text-decoration-line: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial)));
             text-decoration-line: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial)));
             -webkit-text-decoration-style: var(--framer-link-current-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial)));
@@ -1506,16 +1514,17 @@
             text-decoration-color: var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial)));
             text-decoration-thickness: var(--framer-link-current-text-decoration-thickness, var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, initial)));
             text-decoration-skip-ink: var(--framer-link-current-text-decoration-skip-ink, var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink, initial)));
-            text-underline-offset: var(--framer-link-current-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial)))
+            text-underline-offset: var(--framer-link-current-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial)));
+            background-color: var(--framer-link-current-text-background-color, var(--framer-link-text-background-color, var(--framer-text-background-color, initial)))
         }
 
         @supports not (color:color(display-p3 1 1 1)) {
             a.framer-text[data-framer-page-link-current],
-            a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]),
-            span.framer-text[data-framer-page-link-current],
-            span.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]) {
+            span.framer-text[data-framer-page-link-current] {
                 color: var(--framer-link-current-text-color-rgb, var(--framer-link-current-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))));
-                background-color: var(--framer-link-current-text-background-color-rgb, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, var(--framer-text-background-color-rgb, var(--framer-text-background-color, initial))))))
+                background-color: var(--framer-link-current-text-background-color-rgb, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, var(--framer-text-background-color-rgb, var(--framer-text-background-color, initial))))));
+                -webkit-text-decoration-color: var(--framer-link-current-text-decoration-color-rgb, var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color-rgb, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color-rgb, var(--framer-text-decoration-color, currentcolor))))));
+                text-decoration-color: var(--framer-link-current-text-decoration-color-rgb, var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color-rgb, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color-rgb, var(--framer-text-decoration-color, currentcolor))))))
             }
         }
 
@@ -1526,8 +1535,13 @@
             font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
             font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
             font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
-            color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))));
+            color: inherit;
             font-size: calc(var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)))*var(--framer-font-size-scale, 1))
+        }
+
+        code.framer-text a.framer-text[data-framer-page-link-current],
+        code.framer-text span.framer-text[data-framer-page-link-current] {
+            color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))))
         }
 
         @supports not (color:color(display-p3 1 1 1)) {
@@ -1544,19 +1558,19 @@
         a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]),
         span.framer-text[data-framer-page-link-current]:hover,
         span.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
+            color: inherit;
             font-family: var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));
             font-style: var(--framer-link-hover-font-style, var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));
             font-weight: var(--framer-link-hover-font-weight, var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));
-            color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
             font-size: calc(var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))))*var(--framer-font-size-scale, 1));
             text-transform: var(--framer-link-hover-text-transform, var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none))));
-            background-color: var(--framer-link-hover-text-background-color, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color, initial)));
             border-radius: var(--framer-link-hover-text-background-radius, var(--framer-link-current-text-background-radius, var(--framer-link-text-background-radius, initial)));
             padding: var(--framer-link-hover-text-background-padding, var(--framer-link-current-text-background-padding, var(--framer-link-text-background-padding, initial)))
         }
 
         a.framer-text[data-framer-page-link-current]:hover,
         span.framer-text[data-framer-page-link-current]:hover {
+            color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
             -webkit-text-decoration-line: var(--framer-link-hover-text-decoration, var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial))));
             text-decoration-line: var(--framer-link-hover-text-decoration, var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, initial))));
             -webkit-text-decoration-style: var(--framer-link-hover-text-decoration-style, var(--framer-link-current-text-decoration-style, var(--framer-link-text-decoration-style, var(--framer-text-decoration-style, initial))));
@@ -1565,31 +1579,23 @@
             text-decoration-color: var(--framer-link-hover-text-decoration-color, var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color, initial))));
             text-decoration-thickness: var(--framer-link-hover-text-decoration-thickness, var(--framer-link-current-text-decoration-thickness, var(--framer-link-text-decoration-thickness, var(--framer-text-decoration-thickness, initial))));
             text-decoration-skip-ink: var(--framer-link-hover-text-decoration-skip-ink, var(--framer-link-current-text-decoration-skip-ink, var(--framer-link-text-decoration-skip-ink, var(--framer-text-decoration-skip-ink, initial))));
-            text-underline-offset: var(--framer-link-hover-text-decoration-offset, var(--framer-link-current-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial))))
+            text-underline-offset: var(--framer-link-hover-text-decoration-offset, var(--framer-link-current-text-decoration-offset, var(--framer-link-text-decoration-offset, var(--framer-text-decoration-offset, initial))));
+            background-color: var(--framer-link-hover-text-background-color, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color, initial)))
         }
 
         @supports not (color:color(display-p3 1 1 1)) {
             a.framer-text[data-framer-page-link-current]:hover,
-            a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]),
-            span.framer-text[data-framer-page-link-current]:hover,
-            span.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
+            span.framer-text[data-framer-page-link-current]:hover {
                 color: var(--framer-link-hover-text-color-rgb, var(--framer-link-hover-text-color, var(--framer-link-current-text-color-rgb, var(--framer-link-current-text-color, var(--framer-link-text-color-rgb, var(--framer-link-text-color, var(--framer-code-text-color-rgb, var(--framer-code-text-color, var(--framer-text-color-rgb, var(--framer-text-color, #000))))))))));
-                background-color: var(--framer-link-hover-text-background-color-rgb, var(--framer-link-hover-text-background-color, var(--framer-link-current-text-background-color-rgb, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, initial))))))
+                background-color: var(--framer-link-hover-text-background-color-rgb, var(--framer-link-hover-text-background-color, var(--framer-link-current-text-background-color-rgb, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color-rgb, var(--framer-link-text-background-color, initial))))));
+                -webkit-text-decoration-color: var(--framer-link-hover-text-decoration-color-rgb, var(--framer-link-hover-text-decoration-color, var(--framer-link-current-text-decoration-color-rgb, var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color-rgb, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color-rgb, var(--framer-text-decoration-color, currentcolor))))))));
+                text-decoration-color: var(--framer-link-hover-text-decoration-color-rgb, var(--framer-link-hover-text-decoration-color, var(--framer-link-current-text-decoration-color-rgb, var(--framer-link-current-text-decoration-color, var(--framer-link-text-decoration-color-rgb, var(--framer-link-text-decoration-color, var(--framer-text-decoration-color-rgb, var(--framer-text-decoration-color, currentcolor))))))))
             }
         }
 
         code.framer-text a.framer-text[data-framer-page-link-current]:hover,
-        code.framer-text a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]),
-        code.framer-text span.framer-text[data-framer-page-link-current]:hover,
-        code.framer-text span.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
-            font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
-            font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
-            font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
-            color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)))));
-            font-size: calc(var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))))*var(--framer-font-size-scale, 1));
-            background-color: var(--framer-link-hover-text-background-color, var(--framer-link-current-text-background-color, var(--framer-link-text-background-color, var(--framer-text-background-color, initial))));
-            border-radius: var(--framer-link-hover-text-background-radius, var(--framer-link-current-text-background-radius, var(--framer-link-text-background-radius, var(--framer-text-background-radius, initial))));
-            padding: var(--framer-link-hover-text-background-padding, var(--framer-link-current-text-background-padding, var(--framer-link-text-background-padding, var(--framer-text-background-padding, initial))))
+        code.framer-text span.framer-text[data-framer-page-link-current]:hover {
+            color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)))))
         }
 
         @supports not (color:color(display-p3 1 1 1)) {
@@ -1636,12 +1642,13 @@
 
         ul.framer-text,
         ol.framer-text {
-            padding-inline-start: 3ch;
+            padding-inline-start: 0;
             position: relative
         }
 
         li.framer-text {
             counter-increment: list-item;
+            padding-inline-start: 2ch;
             list-style: none
         }
 
@@ -1652,29 +1659,34 @@
             inset-inline-start: 0
         }
 
+        ol.framer-text>li.framer-text:nth-last-child(n+10),
+        ol.framer-text>li.framer-text:nth-last-child(n+10)~li {
+            padding-inline-start: 3ch
+        }
+
         ol.framer-text>li.framer-text:nth-last-child(n+100),
         ol.framer-text>li.framer-text:nth-last-child(n+100)~li {
-            padding-inline-start: 1ch
+            padding-inline-start: 4ch
         }
 
         ol.framer-text>li.framer-text:nth-last-child(n+1000),
         ol.framer-text>li.framer-text:nth-last-child(n+1000)~li {
-            padding-inline-start: 2ch
+            padding-inline-start: 5ch
         }
 
         ol.framer-text>li.framer-text:nth-last-child(n+10000),
         ol.framer-text>li.framer-text:nth-last-child(n+10000)~li {
-            padding-inline-start: 3ch
+            padding-inline-start: 6ch
         }
 
         ol.framer-text>li.framer-text:nth-last-child(n+100000),
         ol.framer-text>li.framer-text:nth-last-child(n+100000)~li {
-            padding-inline-start: 4ch
+            padding-inline-start: 7ch
         }
 
         ol.framer-text>li.framer-text:nth-last-child(n+1000000),
         ol.framer-text>li.framer-text:nth-last-child(n+1000000)~li {
-            padding-inline-start: 5ch
+            padding-inline-start: 8ch
         }
 
         ul.framer-text>li.framer-text:before {
@@ -2296,12 +2308,12 @@
             }
         }
 
-        .framer-tY4Vr.framer-lux5qc,
-        .framer-tY4Vr .framer-lux5qc {
+        .framer-9wgUm.framer-lux5qc,
+        .framer-9wgUm .framer-lux5qc {
             display: block
         }
 
-        .framer-tY4Vr.framer-72rtr7 {
+        .framer-9wgUm.framer-72rtr7 {
             background-color: #000;
             flex-flow: column;
             place-content: center flex-start;
@@ -2315,7 +2327,7 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-1r8wtkv {
+        .framer-9wgUm .framer-1r8wtkv {
             flex-flow: column;
             flex: none;
             place-content: center;
@@ -2329,7 +2341,7 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-jjrj8f {
+        .framer-9wgUm .framer-jjrj8f {
             flex-flow: row;
             flex: none;
             place-content: center;
@@ -2343,7 +2355,7 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-o8n2p6 {
+        .framer-9wgUm .framer-o8n2p6 {
             --border-bottom-width: .5px;
             --border-color: #dbdbdb;
             --border-left-width: .5px;
@@ -2364,7 +2376,7 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-1ubcf5j {
+        .framer-9wgUm .framer-1ubcf5j {
             flex-flow: row;
             flex: none;
             place-content: center;
@@ -2378,7 +2390,7 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-shwxsp {
+        .framer-9wgUm .framer-shwxsp {
             aspect-ratio: 1;
             height: var(--framer-aspect-ratio-supported, 70px);
             will-change: var(--framer-will-change-override, transform);
@@ -2389,7 +2401,7 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-1kvr5ko {
+        .framer-9wgUm .framer-1kvr5ko {
             flex-flow: column;
             flex: none;
             place-content: center;
@@ -2403,16 +2415,16 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-879wm0,
-        .framer-tY4Vr .framer-zwl3e8,
-        .framer-tY4Vr .framer-10vwlyr,
-        .framer-tY4Vr .framer-ltdm02,
-        .framer-tY4Vr .framer-s8pnty,
-        .framer-tY4Vr .framer-1d38265,
-        .framer-tY4Vr .framer-1gy635l,
-        .framer-tY4Vr .framer-uqy83m,
-        .framer-tY4Vr .framer-ieidjr,
-        .framer-tY4Vr .framer-1dveqdq {
+        .framer-9wgUm .framer-879wm0,
+        .framer-9wgUm .framer-zwl3e8,
+        .framer-9wgUm .framer-10vwlyr,
+        .framer-9wgUm .framer-ltdm02,
+        .framer-9wgUm .framer-s8pnty,
+        .framer-9wgUm .framer-1d38265,
+        .framer-9wgUm .framer-1gy635l,
+        .framer-9wgUm .framer-uqy83m,
+        .framer-9wgUm .framer-ieidjr,
+        .framer-9wgUm .framer-1dveqdq {
             --framer-link-text-color: #09f;
             --framer-link-text-decoration: underline;
             white-space: pre-wrap;
@@ -2424,13 +2436,13 @@
             position: relative
         }
 
-        .framer-tY4Vr .framer-1ktg9nd,
-        .framer-tY4Vr .framer-1orqhb,
-        .framer-tY4Vr .framer-1eqi6we,
-        .framer-tY4Vr .framer-13tqwgf,
-        .framer-tY4Vr .framer-1x5o3eb,
-        .framer-tY4Vr .framer-16y4fvv,
-        .framer-tY4Vr .framer-1eklf3t {
+        .framer-9wgUm .framer-1ktg9nd,
+        .framer-9wgUm .framer-1orqhb,
+        .framer-9wgUm .framer-1eqi6we,
+        .framer-9wgUm .framer-13tqwgf,
+        .framer-9wgUm .framer-1x5o3eb,
+        .framer-9wgUm .framer-16y4fvv,
+        .framer-9wgUm .framer-1eklf3t {
             flex-flow: column;
             flex: none;
             place-content: center;
@@ -2444,7 +2456,7 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-5mu95c {
+        .framer-9wgUm .framer-5mu95c {
             --border-bottom-width: .5px;
             --border-color: #dbdbdb;
             --border-left-width: .5px;
@@ -2465,13 +2477,13 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-b6z7l0,
-        .framer-tY4Vr .framer-atzk42,
-        .framer-tY4Vr .framer-fs7j6c,
-        .framer-tY4Vr .framer-1wr0ump,
-        .framer-tY4Vr .framer-18ddwok,
-        .framer-tY4Vr .framer-1dld52j,
-        .framer-tY4Vr .framer-s5g1pa {
+        .framer-9wgUm .framer-b6z7l0,
+        .framer-9wgUm .framer-atzk42,
+        .framer-9wgUm .framer-fs7j6c,
+        .framer-9wgUm .framer-1wr0ump,
+        .framer-9wgUm .framer-18ddwok,
+        .framer-9wgUm .framer-1dld52j,
+        .framer-9wgUm .framer-s5g1pa {
             flex-flow: column;
             flex: none;
             place-content: center;
@@ -2485,11 +2497,11 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-2pe3ho,
-        .framer-tY4Vr .framer-1veqg20,
-        .framer-tY4Vr .framer-9l952n,
-        .framer-tY4Vr .framer-1j7mm6b,
-        .framer-tY4Vr .framer-fz8t1e {
+        .framer-9wgUm .framer-2pe3ho,
+        .framer-9wgUm .framer-1veqg20,
+        .framer-9wgUm .framer-9l952n,
+        .framer-9wgUm .framer-1j7mm6b,
+        .framer-9wgUm .framer-fz8t1e {
             --border-bottom-width: .5px;
             --border-color: #dbdbdb;
             --border-left-width: .5px;
@@ -2510,23 +2522,23 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-ny201l-container,
-        .framer-tY4Vr .framer-184dsva-container,
-        .framer-tY4Vr .framer-tqpqdt-container,
-        .framer-tY4Vr .framer-10zdrnm-container,
-        .framer-tY4Vr .framer-ynqwl3-container,
-        .framer-tY4Vr .framer-mw1sw1-container,
-        .framer-tY4Vr .framer-5jw18b-container,
-        .framer-tY4Vr .framer-1m1pxsh-container,
-        .framer-tY4Vr .framer-1o7atvq-container,
-        .framer-tY4Vr .framer-y6ep64-container {
+        .framer-9wgUm .framer-ny201l-container,
+        .framer-9wgUm .framer-184dsva-container,
+        .framer-9wgUm .framer-tqpqdt-container,
+        .framer-9wgUm .framer-10zdrnm-container,
+        .framer-9wgUm .framer-ynqwl3-container,
+        .framer-9wgUm .framer-mw1sw1-container,
+        .framer-9wgUm .framer-5jw18b-container,
+        .framer-9wgUm .framer-1m1pxsh-container,
+        .framer-9wgUm .framer-1o7atvq-container,
+        .framer-9wgUm .framer-y6ep64-container {
             flex: none;
             width: 100%;
             height: auto;
             position: relative
         }
 
-        .framer-tY4Vr .framer-1ixpswa {
+        .framer-9wgUm .framer-1ixpswa {
             --border-bottom-width: .5px;
             --border-color: #dbdbdb;
             --border-left-width: .5px;
@@ -2547,7 +2559,7 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-5rx0of {
+        .framer-9wgUm .framer-5rx0of {
             flex-flow: wrap;
             flex: none;
             place-content: center flex-start;
@@ -2561,19 +2573,19 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-1m4s0z0-container,
-        .framer-tY4Vr .framer-qw082o-container,
-        .framer-tY4Vr .framer-rhnzzc-container,
-        .framer-tY4Vr .framer-ftr04y-container,
-        .framer-tY4Vr .framer-alswfu-container,
-        .framer-tY4Vr .framer-15tsh84-container {
+        .framer-9wgUm .framer-1m4s0z0-container,
+        .framer-9wgUm .framer-qw082o-container,
+        .framer-9wgUm .framer-rhnzzc-container,
+        .framer-9wgUm .framer-ftr04y-container,
+        .framer-9wgUm .framer-alswfu-container,
+        .framer-9wgUm .framer-15tsh84-container {
             flex: none;
             width: auto;
             height: auto;
             position: relative
         }
 
-        .framer-tY4Vr .framer-1tu48kg {
+        .framer-9wgUm .framer-1tu48kg {
             background-color: #dbdbdb;
             flex: none;
             width: 100%;
@@ -2582,7 +2594,7 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr .framer-tq7zp6 {
+        .framer-9wgUm .framer-tq7zp6 {
             flex-flow: wrap;
             flex: none;
             place-content: center flex-start;
@@ -2596,16 +2608,16 @@
             overflow: visible
         }
 
-        .framer-tY4Vr .framer-36sht3-container,
-        .framer-tY4Vr .framer-1bmx3nx-container,
-        .framer-tY4Vr .framer-uydnr5-container,
-        .framer-tY4Vr .framer-119ll2j-container,
-        .framer-tY4Vr .framer-r1fzot-container,
-        .framer-tY4Vr .framer-vdpsat-container,
-        .framer-tY4Vr .framer-ci2ck8-container,
-        .framer-tY4Vr .framer-1d24uds-container,
-        .framer-tY4Vr .framer-zgqcv3-container,
-        .framer-tY4Vr .framer-9d6ee7-container {
+        .framer-9wgUm .framer-36sht3-container,
+        .framer-9wgUm .framer-1bmx3nx-container,
+        .framer-9wgUm .framer-uydnr5-container,
+        .framer-9wgUm .framer-119ll2j-container,
+        .framer-9wgUm .framer-r1fzot-container,
+        .framer-9wgUm .framer-vdpsat-container,
+        .framer-9wgUm .framer-ci2ck8-container,
+        .framer-9wgUm .framer-1d24uds-container,
+        .framer-9wgUm .framer-zgqcv3-container,
+        .framer-9wgUm .framer-9d6ee7-container {
             will-change: var(--framer-will-change-effect-override, transform);
             flex: none;
             width: 40px;
@@ -2613,8 +2625,8 @@
             position: relative
         }
 
-        .framer-tY4Vr .framer-rmqgtz,
-        .framer-tY4Vr .framer-1utf60i {
+        .framer-9wgUm .framer-rmqgtz,
+        .framer-9wgUm .framer-1utf60i {
             flex-flow: column;
             flex: none;
             place-content: center;
@@ -2628,8 +2640,8 @@
             overflow: hidden
         }
 
-        .framer-tY4Vr[data-border=true]:after,
-        .framer-tY4Vr [data-border=true]:after {
+        .framer-9wgUm[data-border=true]:after,
+        .framer-9wgUm [data-border=true]:after {
             content: "";
             border-width: var(--border-top-width, 0)var(--border-right-width, 0)var(--border-bottom-width, 0)var(--border-left-width, 0);
             border-color: var(--border-color, none);
@@ -2645,16 +2657,16 @@
         }
 
         @media (min-width:810px) and (max-width:1199.98px) {
-            .framer-tY4Vr.framer-72rtr7 {
+            .framer-9wgUm.framer-72rtr7 {
                 width: 810px
             }
         }
 
         @media (max-width:809.98px) {
-            .framer-tY4Vr.framer-72rtr7 {
+            .framer-9wgUm.framer-72rtr7 {
                 width: 390px
             }
-            .framer-tY4Vr .framer-shwxsp {
+            .framer-9wgUm .framer-shwxsp {
                 height: var(--framer-aspect-ratio-supported, 80px)
             }
         }
@@ -3534,15 +3546,16 @@
     <!-- Start of bodyStart -->
 
     <!-- End of bodyStart -->
+
     <div id="main" data-framer-hydrate-v2="{&quot;routeId&quot;:&quot;augiA20Il&quot;,&quot;localeId&quot;:&quot;default&quot;,&quot;breakpoints&quot;:[{&quot;hash&quot;:&quot;72rtr7&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 1200px)&quot;},{&quot;hash&quot;:&quot;1tvsjnk&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 810px) and (max-width: 1199.98px)&quot;},{&quot;hash&quot;:&quot;w5bb08&quot;,&quot;mediaQuery&quot;:&quot;(max-width: 809.98px)&quot;},{&quot;hash&quot;:&quot;19n2es&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 1200px)&quot;},{&quot;hash&quot;:&quot;684j86&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 810px) and (max-width: 1199.98px)&quot;},{&quot;hash&quot;:&quot;1qtawn1&quot;,&quot;mediaQuery&quot;:&quot;(max-width: 809.98px)&quot;}]}"
-        data-framer-ssr-released-at="2025-10-29T10:37:07.517Z" data-framer-page-optimized-at="2025-10-30T09:58:38.489Z" data-framer-generated-page>
+        data-framer-ssr-released-at="2025-11-11T08:37:37.868Z" data-framer-page-optimized-at="2025-11-12T15:50:33.466Z" data-framer-generated-page>
         <!--$-->
         <style data-framer-html-style>
             :root body {
                 background: var(--token-4942b4c1-7db2-44f1-bd7a-7ef9407cd90b, rgb(255, 255, 255));
             }
         </style>
-        <div routeid="augiA20Il" class="framer-tcYtn framer-jJxdA framer-19n2es" data-layout-template="true" style="min-height:100vh;width:auto">
+        <div webpageid="augiA20Il" class="framer-tcYtn framer-jJxdA framer-19n2es" data-layout-template="true" style="min-height:100vh;width:auto">
             <header class="framer-6yy45e" data-framer-name="Header">
                 <div class="framer-gkkarc" data-border="true" data-framer-name="Content" style="will-change:transform;opacity:0;transform:translateY(40px)">
                     <div class="framer-1gtzwub" data-framer-name="Time &amp; Zone">
@@ -3569,11 +3582,11 @@
                             </div>
                             <div class="framer-146mrtu-container" data-framer-name="Timer" name="Timer">
                                 <!--$-->
-                                <p style="color:var(--token-d218e8b7-f7a5-4755-a2a7-32bc358fa833, rgb(126, 126, 126));user-select:none;margin:0;font-family:&quot;Geist Mono&quot;, monospace;font-feature-settings:normal;font-size:12px;font-style:normal;font-weight:400;letter-spacing:0.04em;line-height:16px">9
+                                <p style="color:var(--token-d218e8b7-f7a5-4755-a2a7-32bc358fa833, rgb(126, 126, 126));user-select:none;margin:0;font-family:&quot;Geist Mono&quot;, monospace;font-feature-settings:normal;font-size:12px;font-style:normal;font-weight:400;letter-spacing:0.04em;line-height:16px">3
                                     <!-- -->:
-                                    <!-- -->58
-                                    <!-- -->:38
-                                    <!-- -->AM
+                                    <!-- -->50
+                                    <!-- -->:33
+                                    <!-- -->PM
                                     <!-- -->UTC</p>
                                 <!--/$-->
                             </div>
@@ -3586,7 +3599,7 @@
                     background: rgb(0, 0, 0);
                 }
             </style>
-            <div data-framer-root class="framer-tY4Vr framer-Xag9j framer-Jag2U framer-T1Nnv framer-SCk8d framer-72rtr7" style="min-height:100vh;width:auto;display:contents">
+            <div data-framer-root class="framer-9wgUm framer-Xag9j framer-Jag2U framer-T1Nnv framer-SCk8d framer-72rtr7" style="min-height:100vh;width:auto;display:contents">
                 <main class="framer-1r8wtkv" data-framer-name="Main">
                     <div class="framer-jjrj8f" data-framer-name="Intro">
                         <div class="framer-o8n2p6" data-border="true" data-framer-name="Profile Details" style="will-change:transform;opacity:0;transform:translateY(40px)">
@@ -4880,15 +4893,15 @@
                     "format": {},
                     "formatRange": {},
                     "formatToParts": {
-                        "359909816": [{
+                        "2903100674": [{
                             "type": "month",
-                            "value": "10"
+                            "value": "11"
                         }, {
                             "type": "literal",
                             "value": "/"
                         }, {
                             "type": "day",
-                            "value": "30"
+                            "value": "12"
                         }, {
                             "type": "literal",
                             "value": "/"
@@ -4917,14 +4930,21 @@
             }
         })
     </script>
-    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/react.LJG3gYK_.mjs">
+    <script>
+        typeof document < "u" && (window.process = { ...window.process,
+            env: { ...window.process ? .env,
+                NODE_ENV : "production"
+            }
+        });
+    </script>
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/react.Bl0hm7vr.mjs">
     <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/rolldown-runtime.DqJrGdx2.mjs">
-    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/motion.D18zYenW.mjs">
-    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/framer.1X11TxIN.mjs">
-    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/GkzgAspIqBN08gmQ4yktXNkDOJW-NE7Bh6OCQ42fQho.cvbZpJwc.mjs">
-    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/shared-lib.BNLpJiqQ.mjs">
-    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/script_main.ob8imTpi.mjs">
-    <script type="module" async data-framer-bundle="main" fetchpriority="low" src="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/script_main.ob8imTpi.mjs"></script>
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/motion.CZp_6o9Z.mjs">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/framer.CsqEIn15.mjs">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/f9lVFZ10tFeWCEPEq5h04KFcdQxIBrJf-Nsqxo5huaI.BBhxbjDT.mjs">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/shared-lib.DoHEaHSX.mjs">
+    <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/script_main.Xu1NeADO.mjs">
+    <script type="module" async data-framer-bundle="main" fetchpriority="low" src="https://framerusercontent.com/sites/2Vb0G04OUgMm0WEFgdP503/script_main.Xu1NeADO.mjs"></script>
     <div id="svg-templates" style="position: absolute; overflow: hidden; bottom: 0; left: 0; width: 0; height: 0; z-index: 0; contain: strict" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" id="svg-292954542_199"><path d="M6 18 18 6m0 0h-8m8 0v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <svg viewBox="0 0 40 40" id="svg10041506604"><g transform="translate(9 5)"><path d="M 0 32 L 0 0 L 21.333 0 L 21.333 32 Z" fill="transparent"/><path d="M 21.333 0 L 21.333 10.667 L 10.667 10.667 L 0 0 Z M 0 10.667 L 10.667 10.667 L 21.333 21.333 L 10.667 21.333 L 10.667 32 L 0 21.333 Z" fill="var(--token-58507be5-8cf3-41b5-819b-33db1dcdd00c, rgb(18, 18, 18))"/></g></svg>
